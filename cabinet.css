@@ -37,6 +37,7 @@ a {
 button {
     -webkit-appearance: none;
     border: none;
+    margin: 0;
     padding: 10px 24px;
     background: var(--accent-main);
     color: var(--accent-main-contrast);
@@ -102,6 +103,10 @@ form.login input:not([type="checkbox"],[type="radio"]),
 form.login select {
     /*width: 100%;*/
     margin: 18px;
+}
+
+form.profile fieldset {
+    width: 100%;
 }
 
 form button {
@@ -235,6 +240,11 @@ main > *:first-child {
 .flex.center {
     justify-content: center;
     align-items: center;
+}
+
+.flex.start {
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .flex.space {
