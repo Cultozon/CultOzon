@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile — Cultozon</title>
+    <link rel="stylesheet" href="cabinet.css">
+</head>
+<body>
+<header class="fixed flex center row space">
+    <figure class="flex center logo"></figure>
+    <nav class="flex row">
+        <a class="username">cultadmin@mail.ru</a>
+        <a href="/" class="flex center logout">Выйти</a>
+    </nav>
+</header>
+<aside class="fixed">
+    <nav class="flex column">
+        <a href="">Мероприятия</a>
+        <a href="profile.html" class="active">Профиль</a>
+    </nav>
+</aside>
+<div class="main-wrapper">
+    <main>
+        <h1>Профиль</h1>
+        <form class="flex-column profile">
+            <input placeholder="Название компании" class="full-width">
+            <fieldset class="flex-row">
+                <input type="email" placeholder="E-mail">
+                <input type="tel" placeholder="Телефон">
+            </fieldset>
+            <select>
+                <option selected disabled>Сфера деятельности</option>
+                <option>Сфера 1</option>
+                <option>Сфера 2</option>
+                <option>Сфера 3</option>
+            </select>
+        </form>
+    </main>
+</div>
+</body>
+</html>

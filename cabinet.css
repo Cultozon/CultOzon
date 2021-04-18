@@ -1,0 +1,277 @@
+@import "/fonts/fonts.css";
+
+* {
+    box-sizing: border-box;
+    font-family: "PT Root UI", sans-serif;
+    outline: none;
+}
+
+:root {
+    --text-main: black;
+    --text-second: #333333;
+    --text-alternate: #666666;
+    --accent-main: rgba(239, 128, 49, 1);
+    --accent-main-contrast: white;
+    --background-main: white;
+    --background-second: #F2F2F2;
+    --border: #D9D9D9;
+
+    --header-size: 72px;
+    --aside-size: 197px;
+
+    --padding: 0;
+    --header-padding: 54px;
+
+    --input-width: 284px;
+
+    height: 100%;
+    background: var(--background-second);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    /*cursor: pointer;*/
+}
+
+button {
+    -webkit-appearance: none;
+    border: none;
+    padding: 10px 24px;
+    background: var(--accent-main);
+    color: var(--accent-main-contrast);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+fieldset {
+    all: initial;
+}
+
+body {
+    margin: unset;
+    /*height: auto;*/
+    height: 100%;
+}
+
+body.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+body.full-screen div,
+body.full-screen main {
+    /*height: 100vh;*/
+}
+
+form.login {
+    /*color: var(--gray);*/
+    width: auto;
+    height: auto;
+}
+
+form.profile {
+    width: 590px;
+}
+
+form input:not([type="checkbox"],[type="radio"]),
+form select {
+    -webkit-appearance: none;
+    border: unset;
+    border-radius: unset;
+    border-bottom: 1px solid var(--text-second);
+    background: none;
+    font-size: 1rem;
+    margin: 24px 0;
+    align-self: flex-start;
+    width: var(--input-width);
+}
+
+form input.full-width:not([type="checkbox"],[type="radio"]),
+form select.full-width {
+    width: 100%;
+}
+
+form.login input:not([type="checkbox"],[type="radio"]),
+form.login select {
+    /*width: 100%;*/
+    margin: 18px;
+}
+
+form button {
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+form a {
+    opacity: .5;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--header-size);
+    background: var(--background-main);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding-right: var(--header-padding);
+}
+
+header nav a:not(:last-child) {
+    margin: 0 24px;
+}
+
+header nav .logout {
+    color: var(--text-alternate);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+
+    background-image: url("/images/Logout.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18px;
+    padding-left: 22px;
+}
+
+header nav .username:before {
+    --size: 26px;
+    content: 'C';
+    display: inline-block;
+    text-align: center;
+    margin: 4px;
+    width: var(--size);
+    height: var(--size);
+    line-height: var(--size);
+    border-radius: 100%;
+    color: var(--accent-main-contrast);
+    background-color: var(--accent-main);
+}
+
+aside {
+    top: var(--header-size);
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: var(--aside-size);
+    background: var(--background-main);
+    border-right: 1px solid var(--border);
+}
+
+aside nav {
+    margin-top: 72px;
+}
+
+aside nav a {
+    color: var(--text-second);
+    font-weight: bold;
+    padding: 12px 0;
+    padding-left: 34px;
+    width: 100%;
+}
+
+aside nav a.active {
+    color: var(--accent-main);
+    background-image: url("/images/Arrow.svg");
+    background-position: left 21px center;
+    background-repeat: no-repeat;
+    background-size: 7px;
+}
+
+main {
+    background: var(--background-main);
+    padding: 36px;
+    height: 100%;
+}
+
+main > *:first-child {
+    margin-top: unset;
+}
+
+.main-wrapper {
+    /*margin-top: 72px;*/
+    margin-left: 197px;
+    padding: 36px;
+    padding-top: calc(72px + 36px);
+    padding-bottom: unset;
+    height: 100%;
+}
+
+.main-wrapper main {
+    max-width: 1172px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.half-screen {
+    display: flex;
+    padding: unset;
+    padding-left: 50%;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.space {
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+figure.logo {
+    padding: unset;
+    margin: unset;
+    height: 100%;
+    width: var(--aside-size);
+    border-right: 1px solid var(--border);
+}
+
+figure.logo:before {
+    content: 'Логотип';
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--text-alternate);
+}
