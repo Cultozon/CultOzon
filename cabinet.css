@@ -15,6 +15,7 @@
     --background-main: white;
     --background-second: #F2F2F2;
     --border: #D9D9D9;
+    --border-second: #999999;
 
     --header-size: 72px;
     --aside-size: 197px;
@@ -46,9 +47,17 @@ button {
     cursor: pointer;
 }
 
+button.transparent {
+    background-color: transparent;
+    color: inherit;
+}
+
 h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 48px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
 }
 
 fieldset {
@@ -271,17 +280,179 @@ main > *:first-child {
     justify-content: space-between;
 }
 
+.no-margins {
+    margin: unset;
+}
+
 figure.logo {
     padding: unset;
     margin: unset;
     height: 100%;
     width: var(--aside-size);
     border-right: 1px solid var(--border);
+    background-image: url("/images/Logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 16px;
 }
 
-figure.logo:before {
-    content: 'Логотип';
-    text-transform: uppercase;
-    font-size: 24px;
+.title-count {
+    color: var(--accent-main);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.title-count:before {
+    content: '•';
+    margin: 0 16px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.tabs {
     color: var(--text-alternate);
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid var(--border-second);
+    margin: 32px 0;
+    padding-bottom: 11px;
+}
+
+.tabs > a {
+    margin-right: 36px;
+}
+
+.tabs > a.active {
+    color: var(--text-main);
+    padding-bottom: 8px;
+    border-bottom: 4px solid;
+}
+
+table {
+    width: 100%;
+    margin: 32px 0;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+table thead {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table td {
+    padding: 16px 0;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+table td:not(:last-of-type) {
+    padding-right: 24px;
+}
+
+table tbody tr td > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+table tr > td:first-child {
+    width: 474px;
+}
+
+table h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+table h3:first-child {
+    margin-top: unset;
+}
+
+table .tags {
+    margin-top: 8px;
+}
+
+table .tags a {
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--accent-main-contrast);
+    background-color: var(--accent-main);
+    padding: 0 6px;
+    margin-right: 6px;
+    border-radius: 20px;
+}
+
+table .counter {
+    font-size: 24px;
+}
+
+table .up {
+    color: #27AE60;
+}
+
+table .down {
+    color: #EB5757;
+}
+
+table .delta {
+    margin-bottom: 9px;
+}
+
+table .actions a {
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.popup-wrapper {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    width: 100%;
+    max-width: 1060px;
+    background: white;
+}
+
+.popup .header {
+    width: 100%;
+    height: var(--header-size);
+    border-bottom: 1px solid var(--border);
+}
+
+.popup .close-popup {
+    height: 100%;
+    width: var(--header-size);
+    border-left: 1px solid var(--border);
+    background: url("/images/Close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+.popup form.event {
+    width: 100%;
+    max-width: 718px;
+    margin: 64px 0;
+}
+
+@media (min-width: 1443px) {
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-wrapper main {
+        width: 1172px;
+    }
 }
