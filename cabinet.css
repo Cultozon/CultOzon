@@ -459,6 +459,11 @@ table .actions a {
     padding: 0 24px;
 }
 
+.cover-upload, .gallery-upload {
+    height: 300px;
+    border: 1px dashed gray;
+}
+
 @media (min-width: 1443px) {
     .main-wrapper {
         display: flex;
