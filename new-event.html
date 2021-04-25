@@ -42,7 +42,7 @@
             </form>
             <div><span>01 марта 2021 - 28 марта 2021</span></div>
         </div>
-        <table class="events" cellpadding="">
+        <table class="events">
             <thead>
             <tr>
                 <td>Мероприятие</td>
@@ -149,18 +149,18 @@
         </table>
     </main>
 </div>
-<div class="popup-wrapper flex center column">
-    <section class="popup flex center column">
+<div class="popup-wrapper">
+    <section class="popup">
         <div class="header flex row space">
             <figure class="logo"></figure>
-            <a href="" class="close-popup"></a>
+            <a href="events.html" class="close-popup"></a>
         </div>
         <form class="event flex column">
             <div class="flex center row space">
                 <h1>Мероприятие #1</h1>
                 <div class="flex column">
                     <a>Дублировать карточку</a>
-                    <a>Удалить карточку</a>
+                    <a href="events.html">Удалить карточку</a>
                 </div>
             </div>
             <hr>
@@ -186,9 +186,19 @@
                 <input type="radio"><label>18+</label>
             </div>
             <p>Выберите статус мероприятия:</p>
-
+            <label><input type="radio"> Билеты в продаже</label>
+            <label><input type="radio"> Анонс мероприятия</label>
+            <input placeholder="Цена">
+            <input placeholder="Ссылка для кнопки «Купить билет»">
+            <label><input type="checkbox"> Билеты продаются напрямую от организтора</label>
         </form>
-        <div class="footer"></div>
+        <div class="footer flex center row space">
+            <button>Отменить</button>
+            <div>
+                <button>Сохранить</button>
+                <button>Опубликовать</button>
+            </div>
+        </div>
     </section>
 </div>
 </body>

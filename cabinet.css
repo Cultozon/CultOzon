@@ -415,12 +415,19 @@ table .actions a {
     bottom: 0;
     overflow: scroll;
     background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
 }
 
 .popup {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 1060px;
     background: white;
+    min-height: min-content
 }
 
 .popup .header {
@@ -443,6 +450,13 @@ table .actions a {
     width: 100%;
     max-width: 718px;
     margin: 64px 0;
+}
+
+.popup .footer {
+    width: 100%;
+    height: var(--header-size);
+    border-top: 1px solid var(--border);
+    padding: 0 24px;
 }
 
 @media (min-width: 1443px) {
