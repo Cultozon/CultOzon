@@ -232,6 +232,10 @@ main > *:first-child {
     padding: unset;
     padding-left: 50%;
     height: 100vh;
+
+    background-size: 50%;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 .flex {
@@ -290,7 +294,7 @@ figure.logo {
     height: 100%;
     width: var(--aside-size);
     border-right: 1px solid var(--border);
-    background-image: url("/images/Logo.svg");
+    background-image: url("/images/Logo.black.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 16px;

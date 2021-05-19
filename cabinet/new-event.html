@@ -10,7 +10,7 @@
     <figure class="logo"></figure>
     <nav class="flex row">
         <a class="username">cultadmin@mail.ru</a>
-        <a href="/" class="flex center logout">Выйти</a>
+        <a href="login.html" class="flex center logout">Выйти</a>
     </nav>
 </header>
 <aside class="fixed">
@@ -27,7 +27,7 @@
             </div>
             <div class="flex center row">
                 <button class="transparent">Скачать данные</button>
-                <button onclick="location.href='new-event.html'">Добавить</button>
+                <button>Добавить</button>
             </div>
         </div>
         <div class="tabs">
@@ -42,7 +42,7 @@
             </form>
             <div><span>01 марта 2021 - 28 марта 2021</span></div>
         </div>
-        <table class="events" cellpadding="">
+        <table class="events">
             <thead>
             <tr>
                 <td>Мероприятие</td>
@@ -93,9 +93,9 @@
                 </td>
                 <td>
                     <div class="actions">
-                        <a href="new-event.html">Редактировать</a>
-                        <a href="">Снять с публикации</a>
-                        <a href="">Отправить в архив</a>
+                        <a>Редактировать</a>
+                        <a>Снять с публикации</a>
+                        <a>Отправить в архив</a>
                     </div>
                 </td>
             </tr>
@@ -139,15 +139,67 @@
                 </td>
                 <td>
                     <div class="actions">
-                        <a href="new-event.html">Редактировать</a>
-                        <a href="">Снять с публикации</a>
-                        <a href="">Отправить в архив</a>
+                        <a>Редактировать</a>
+                        <a>Снять с публикации</a>
+                        <a>Отправить в архив</a>
                     </div>
                 </td>
             </tr>
             </tbody>
         </table>
     </main>
+</div>
+<div class="popup-wrapper">
+    <section class="popup">
+        <div class="header flex row space">
+            <figure class="logo"></figure>
+            <a href="events.html" class="close-popup"></a>
+        </div>
+        <form class="event flex column">
+            <div class="flex center row space">
+                <h1>Мероприятие #1</h1>
+                <div class="flex column">
+                    <a>Дублировать карточку</a>
+                    <a href="events.html">Удалить карточку</a>
+                </div>
+            </div>
+            <hr>
+            <div class="cover-upload"></div>
+            <input class="full-width" placeholder="Название мероприятия">
+            <div class="flex-row">
+                <input placeholder="Дата">
+                <input placeholder="Время">
+            </div>
+            <input class="full-width" placeholder="Город">
+            <input class="full-width" placeholder="Место проведения">
+            <input class="full-width" placeholder="Описание">
+            <div class="gallery-upload"></div>
+            <select>
+                <option disabled selected>Выберите тип мероприятия</option>
+            </select>
+            <div class="">
+                <p>Выберите возрастной рейтинг</p>
+                <input type="radio"><label>0+</label>
+                <input type="radio"><label>6+</label>
+                <input type="radio"><label>12+</label>
+                <input type="radio"><label>16+</label>
+                <input type="radio"><label>18+</label>
+            </div>
+            <p>Выберите статус мероприятия:</p>
+            <label><input type="radio"> Билеты в продаже</label>
+            <label><input type="radio"> Анонс мероприятия</label>
+            <input placeholder="Цена">
+            <input placeholder="Ссылка для кнопки «Купить билет»">
+            <label><input type="checkbox"> Билеты продаются напрямую от организтора</label>
+        </form>
+        <div class="footer flex center row space">
+            <button>Отменить</button>
+            <div>
+                <button onclick="location.href='events.html'">Сохранить</button>
+                <button onclick="location.href='events.html'">Опубликовать</button>
+            </div>
+        </div>
+    </section>
 </div>
 </body>
 </html>

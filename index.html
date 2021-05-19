@@ -2,20 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login — Cultozon</title>
-    <link rel="stylesheet" href="cabinet.css">
+    <title>Cultozon</title>
+    <link rel="stylesheet" href="portal.css">
 </head>
 <body>
-<main class="half-screen" style="background-color: #C4C4C4">
-    <div class="flex-center" style="background-color: white">
-        <form class="flex-center flex-column login" action="events.html">
-            <figure style="all:initial;background:#C4C4C4;border-radius: 100%;width: 48px;height: 48px;margin-bottom: 77px"></figure>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Пароль">
-            <button type="submit">Войти</button>
-            <a href="">Забыли пароль ?</a>
-        </form>
+<header>
+    <div>
+        <a class="logo"><img class="logo" src="/images/Logo.black.svg"></a>
+        <a class="city">Екатеринбург</a>
     </div>
-</main>
+    <a class="icon search"></a>
+    <a class="icon open-menu"></a>
+</header>
+<div class="filters">
+    <div class="mobile">
+        <a>Дата</a>
+        <a>Фильтры</a>
+    </div>
+    <div class="select-date">
+        <input class="select-date" type="text" placeholder="Выбрать дату">
+    </div>
+    <div class="categories">
+        <a class="active">Все мероприятия</a>
+        <a>Концерты/шоу</a>
+        <a>Театр</a>
+        <a>Выставки</a>
+        <a>дети</a>
+        <a>ЕЩЕ</a>
+    </div>
+</div>
+<section class="offers-slider">
+    <a href="event.html" class="slide" style="background-image: url(/images/events/offer.cover.png)">
+        <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+        <div>
+            <span>25 марта, 19:00 · Дворец молодежи</span>
+            <span class="buy">2 500 — 6 000 ₽</span>
+        </div>
+    </a>
+</section>
+<section class="promo-slider">
+    <a class="title">Рекомендуемые мероприятия</a>
+    <div class="events-slider">
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/1.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/2.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/3.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/1.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/2.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/3.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="events">
+    <span class="title">Все мероприятия</span>
+    <div class="events-grid">
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/1.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/2.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/3.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/3.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/1.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/2.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/1.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/2.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+        <a class="event" href="event.html">
+            <div class="cover" style="background-image: url(/images/events/3.png)">
+                <div class="tags"><span>Театр</span></div>
+                <span class="buy">2 500 — 6 000 ₽</span>
+            </div>
+            <div class="details">
+                <span class="title">Фестиваль «Золотая маска» в Екатеринбурге Гоголь Центр</span>
+                <span>25 марта, 19:00 · Дворец молодежи</span>
+            </div>
+        </a>
+    </div>
+    <a class="button">Показать еще</a>
+</section>
+<footer>
+    <div>
+        <img class="logo" src="/images/Logo.white.svg">
+        <span>ООО «КУЛЬТОЗОН». © Все права защищены.</span>
+        <a>Политика обработки персональных данных.</a>
+    </div>
+    <div>
+        <span class="title">СОЦИАЛЬНЫЕ СЕТИ</span>
+        <a>vk.com/cultozon</a>
+        <a>facebook.com/cultozon</a>
+        <a>instagram.com/cultozon</a>
+    </div>
+    <div>
+        <span class="title">КОНТАКТЫ</span>
+        <a>admin@cultozon@gmail.com</a>
+        <a>+7 (343) 378-57-08</a>
+    </div>
+    <div>
+        <span class="title">АДРЕС</span>
+        <span>20075, Екатеринбург</span>
+        <span>ул. Первомайская 15, офис 1203</span>
+    </div>
+</footer>
 </body>
 </html>
