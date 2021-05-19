@@ -125,6 +125,11 @@ header .open-menu {
 .offers-slider {
     height: 100vw;
     max-height: 500px;
+
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
 }
 
 .offers-slider > .slide {
@@ -132,6 +137,7 @@ header .open-menu {
     margin: unset;
     height: 100%;
     width: 100%;
+    min-width: 100%;
     color: white;
     flex-direction: column;
     justify-content: flex-end;
@@ -139,6 +145,8 @@ header .open-menu {
     background-position: center;
     background-size: cover;
     padding: 16px 12px;
+
+    scroll-snap-align: center;
 }
 
 .slide span {
@@ -201,13 +209,15 @@ header .open-menu {
     margin: 24px;
 }
 
-.events > .button {
+.show-more {
+    align-self: center;
     display: inline-block;
     border: 1px solid #000000;
     font-weight: bold;
     padding: 0 24px;
     height: 42px;
     line-height: 42px;
+    margin: 40px 0;
 }
 
 .promo-slider {
@@ -215,14 +225,19 @@ header .open-menu {
 }
 
 .buy {
-    background: #EF8031;
     color: white;
     font-weight: bold;
     font-size: 14px;
     height: 34px;
     line-height: 34px;
     padding: 0 18px;
+    padding-left: 42px;
     align-self: baseline;
+    background-image: url("/images/buy.svg");
+    background-position: left 18px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-color: #EF8031;
 }
 
 .tags > * {
@@ -445,6 +460,10 @@ footer .title {
 
 .more-events > .events-grid {
     margin: 48px 0;
+}
+
+.more-events > .show-more {
+    border: 1px solid #ffffff;
 }
 
 @media (min-width: 1024px) {
