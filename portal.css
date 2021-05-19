@@ -240,6 +240,17 @@ header .open-menu {
     background-color: #EF8031;
 }
 
+.buy:hover {
+    color: transparent;
+    font-size: 0;
+}
+
+.buy:hover:after {
+    content: 'Купить билет';
+    color: white;
+    font-size: 14px;
+}
+
 .tags > * {
     display: inline-block;
     height: 26px;
